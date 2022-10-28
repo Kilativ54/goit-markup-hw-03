@@ -16,6 +16,7 @@ p,
 ul{
 margin-bottom: 0; 
 margin-top:0;
+padding: 0;
 }
 
 :root {
@@ -79,7 +80,11 @@ list-style-type: none;
 
 .foot{
 	background: rgba(47, 48, 58, 1);
-}
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 215px;
+	}
+
 .foot-adress{
 	font-style: normal;
 	font-size: 14px;
@@ -95,10 +100,20 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 text-decoration: none;
 }
+ .logo.logo-foot{
+	margin-bottom: 20px;
+}
+
+.nav-ul>.item:not(:last-child){
+	margin-bottom: 9px;
+}
+
 /* main first*/
  .hero{
 	background:#2F303A;
 	text-align: center;
+	padding-bottom: 200px;
+	padding-top: 200px;
  }
  .hero-tytle{
 margin-bottom: 30px;
@@ -124,7 +139,28 @@ text-align: center;
 	background: var(--button-color);
 	color:#FFFFFF;
 }
+/* секція benefits */
+
+.benefits{
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+/* секція our-work */
+
+.our-work{
+		padding-bottom: 94px;
+}
+
+/* секція our-team */
+
+.our-team{
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .tytle-mini{
+margin-bottom: 10px;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
@@ -136,14 +172,18 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 	}
-	.tytle-work,.team{	
+	.tytle-work,.team{
+margin-bottom: 50px;	
 font-size: 36px;
 line-height:1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--tytle-color);
 	}
+
 	.team-name{
+margin-bottom: 10px;
+margin-top: 30px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
@@ -195,8 +235,10 @@ color:var(--brand-color);
 		text-decoration: none;	
 	}
  /* container */
- .container{
+ .container,.foot{
 	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
  }
 
 
