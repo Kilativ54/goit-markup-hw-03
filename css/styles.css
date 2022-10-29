@@ -33,7 +33,30 @@ body{
 }
 /* header */
 
+.container.head,.nav-main,.nav-ul.site-nav,.nav-ul.second{
+display: flex;
+}
+
+.container.head,.nav-main{
+	align-items: center;
+}
+
+.nav-ul.site-nav>.item.item:not(:last-child){
+	margin-right: 50px;
+}
+
+.nav-ul.site-nav>.item{
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.nav-ul.second>.item-first{
+	padding-left: 344px;
+	margin-right: 50px;
+}
+
 .logo{
+margin-right: 93px;
 text-decoration: none;
 font-family: 'Raleway',Sans-serif;
 font-weight: 700;
@@ -49,6 +72,7 @@ rgba(0, 0, 0, 1)
 	color:var(--tytle-color);
 }
 .nav-link{
+display: block;
 text-decoration: none;
 font-family: 'Roboto',Sans-serif;
 font-style: normal;
@@ -77,9 +101,12 @@ list-style-type: none;
 	} */
 	
 /* Footer */
+.foot-main{
+	background: rgba(47, 48, 58, 1);
+}
 
 .foot{
-	background: rgba(47, 48, 58, 1);
+	
 	padding-top: 60px;
 	padding-bottom: 60px;
 	padding-left: 215px;
@@ -139,17 +166,37 @@ text-align: center;
 	background: var(--button-color);
 	color:#FFFFFF;
 }
+
 /* секція benefits */
 
 .benefits{
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
+.container.benefits>.nav-ul{
+	display: flex;
+}
+
+.nav-ul>.atim:not(:last-child){
+	margin-right: 30px;
+}
+
+.nav-ul>.atim{
+	width: 270px;
+}
 
 /* секція our-work */
 
+.nav-ul.work{
+	display: flex;
+}
+
 .our-work{
 		padding-bottom: 94px;
+}
+
+.nav-ul.work>.item:not(:last-child){
+	margin-right: 30px;
 }
 
 /* секція our-team */
@@ -197,6 +244,15 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 	}
+
+	.nav-ul.team{
+		display: flex;
+	}
+
+	.nav-ul.team>.item:not(:last-child){
+		margin-right: 30px;
+	}
+	
 	/* main second */
 
 .button-secondary{
